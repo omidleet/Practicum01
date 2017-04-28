@@ -4,8 +4,9 @@ var PORT = 3000;
 var aboutPost = "Posted by Omid";
 
 app.get('/', function(request, response) {
-    response.send('Hello Avans!');
+    response.send('Hello World!');
 })
+
 app.get('/about', function(request, response) {
     response.send('Written by Omid');
 })
