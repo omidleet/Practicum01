@@ -2,9 +2,9 @@
   "name": "serverexample",
   "version": "1.0.0",
   "description": "",
-  "main": "./updatedserver/server.js",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "node ./updatedserver/server.js"
+    "start": "node ./server/server.js"
   },
   "author": "Omid Noor",
   "license": "ISC",
