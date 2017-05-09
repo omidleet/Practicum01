@@ -1,0 +1,14 @@
+{
+  "name": "serverexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./updatedserver/server.js",
+  "scripts": {
+    "start": "node ./updatedserver/server.js"
+  },
+  "author": "Omid Noor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
