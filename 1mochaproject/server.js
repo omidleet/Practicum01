@@ -5,9 +5,11 @@
 var express = require('express');
 var port = process.env.PORT || 8080;
 var config = require('./config.json');
+// maak de applicatie
 var app = express();
 
 app.set('PORT', config.webPort);
+//start de server
 var port = process.env.PORT || app.get('PORT');
 
 app.all('*', function(request, response, next) {
@@ -16,6 +18,8 @@ app.all('*', function(request, response, next) {
 })
 
 app.use('/api/v1', require('./routes/routes_api_v1'));
+
+app.use('/api/v2', require('./routes/routes_api_v2'));
 
 app.get('/', function(request, response) {
     response.send('Hello Avans!');
