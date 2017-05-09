@@ -3,8 +3,12 @@
  */
 
 var express = require('express');
-var app = express();
 var port = process.env.PORT || 8080;
+var config = require('./config.json');
+var app = express();
+
+app.set('PORT', config.webPort);
+var port = process.env.PORT || app.get('PORT');
 
 app.get('/', function(request, response) {
     response.send('Hello Avans!');
